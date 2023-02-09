@@ -1,0 +1,232 @@
+.cuerpo{
+    margin: 0%;
+    background-color: rgb(24, 28, 48);
+ }
+ 
+ .iconPc {
+ 
+ height: 5em ;
+ 
+ }
+ 
+ .anim1{
+   animation-name: fundido1 ;
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+
+}
+
+.anim2{
+   opacity: 0;
+   animation-name: fundido2 ;
+   animation-duration: 0.75s;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+}
+@keyframes fundido1{
+   from{ 
+       opacity: 0;
+       transform: translate(0,-10px);
+   }
+
+   to{ opacity: 1;
+      transform: translate(0,0);
+   }
+}
+
+@keyframes fundido2{
+   from{ 
+       opacity: 0;
+       transform: translate(0,-10px);
+   }
+
+   to{ opacity: 1;
+      transform: translate(0,0);
+   }
+}
+
+ .Navegador{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 40px;
+ }
+ 
+ .listaNav {
+    list-style-type: none;
+     display: flex;
+     width: 280px;
+     justify-content: space-around;
+ }
+ 
+ .BotonJuego , .BotonHistoria , .controles {
+ 
+   padding: 10px;
+   background-color: #E6DDC4;
+   border-radius: 10px;
+   font-weight: 280;
+   text-decoration: none;
+   color: black;
+   box-shadow:  2px 3px #678983 ;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.controles{
+
+   margin-top: 10px;
+   margin-left: 8px;
+   width: 6em;
+
+}
+
+.botonhis:active, .botonjug:active, .controles:active {
+   transform: translate(3px, 4px);
+   box-shadow: none;
+   }
+
+.BotonHistoria:active, .BotonJuego:active, .controles:active {
+
+   box-shadow: none;
+    }
+ 
+ .portada{
+    background-image: url(./codigo.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+ h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px grey, 6px 6px black;
+ 
+ }
+ 
+ h2{
+    text-align: center;
+    color: rgb(103, 137, 131);
+    text-shadow: 2px 2px black;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto 0px;
+ 
+ }
+
+ h3{
+    height: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-right: 7px;
+    text-align: center;
+    margin: auto 0px;
+ 
+ }
+ 
+ h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: 0 0 0;
+    font-weight: 380;
+    padding-left: 5em;
+    margin-right: 30px;
+ 
+ 
+ }
+ 
+ p{
+  font-family: 'Montserrat', sans-serif;
+  color: #E6DDC4;
+  
+
+ }
+ 
+ 
+ .contenedorMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ 
+ }
+ 
+ .tarjeta {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
+ }
+ 
+ 
+ .logoPie{
+ 
+    width: 7em;
+    padding-top: 4.2em;
+    padding-bottom: 3em;
+    padding-left: 2.2em;
+ }
+ 
+ 
+ .pie{
+    width: 100%;
+    background-color: #678983;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .pieIzquierdo{
+   display: flex;
+   width: 300px;
+   height: 60px;
+   margin-right: 10em;
+
+}
+ 
+ .principio {
+    width: 30em ;
+ }
+
+
+ .ordenadores {
+
+    width: 30em;
+    margin-right: 75px;
+ }
+
+ .containervideo{
+   background-color: black;
+   padding-bottom: 5px;
+ }
+
+ #duracion{
+   font-family: Arial, sans-serif;
+   color: rgb(232, 231, 231);
+   margin-top: 33px;
+   margin-right: 5px;
+
+ }
+
+ .navideo{
+   background-color: rgb(31, 31, 31);
+   border-radius: 10px;
+   padding-bottom: 8px;
+   margin-left: 5px;
+   margin-right: 5px;
+   display: flex;
+   justify-content: space-between;
+ }

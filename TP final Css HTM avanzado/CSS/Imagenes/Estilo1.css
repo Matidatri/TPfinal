@@ -1,0 +1,220 @@
+.cuerpo{
+   margin: 0%;
+   background-color: rgb(24, 28, 48);
+}
+
+.iconPc {
+
+height: 5em ;
+
+}
+
+.anim1{
+   animation-name: fundido1 ;
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+
+}
+
+.anim2{
+   opacity: 0;
+   animation-name: fundido2 ;
+   animation-duration: 0.75s;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+}
+@keyframes fundido1{
+   from{ 
+       opacity: 0;
+       transform: translate(0,-10px);
+   }
+
+   to{ opacity: 1;
+      transform: translate(0,0);
+   }
+}
+
+@keyframes fundido2{
+   from{ 
+       opacity: 0;
+       transform: translate(0,-10px);
+   }
+
+   to{ opacity: 1;
+      transform: translate(0,0);
+   }
+}
+
+.Navegador{
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0px 40px;
+}
+
+.listaNav {
+   list-style-type: none;
+    display: flex;
+    width: 280px;
+    justify-content: space-around;
+}
+
+.BotonJuego , .BotonHistoria {
+ 
+   padding: 10px;
+   background-color: #E6DDC4;
+   border-radius: 10px;
+   font-weight: 280;
+   text-decoration: none;
+   color: black;
+   box-shadow:  2px 3px #678983 ;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.botonhis:active, .botonjug:active {
+   transform: translate(3px, 4px);
+   box-shadow: none;
+   }
+
+.BotonHistoria:active, .BotonJuego:active {
+
+   box-shadow: none;
+    }
+
+.portada{
+   background-image: url(./codigo.jpg) ;
+   background-attachment: fixed;
+   background-size: cover;
+   display: flex;
+   min-height: 500px;
+   justify-content: center;
+   align-items: center;
+
+}
+
+h1{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3.5em;
+   font-weight: bold;
+   color: white;
+   text-shadow: 2px 2px grey, 6px 6px black;
+
+}
+
+h2{
+   text-align: center;
+   color: rgb(103, 137, 131);
+   text-shadow: 2px 2px black;
+   font-size: 2.5em;
+   font-family: 'Montserrat', sans-serif;
+   margin: auto 0px;
+
+}
+
+.contenedorMain{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 100px 20px;
+   gap: 6em;
+   margin-top: 7em;
+   margin-bottom: 7em;
+
+}
+
+.tarjeta1, .tarjeta2 {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 21em;
+   height: 25em;
+   background-color: #E6DDC4;
+   border: 5px solid #678983;
+
+}
+
+.fotoHistoria, .fotoJuego{
+   width: 100%;
+   margin: 0em;
+}
+
+
+.botonHistoria2, .botonJuego2{
+
+   width: 40%;
+   padding: 10px;
+   color: rgb(243, 241, 241);
+   background-color: rgb(24, 28, 48);
+   border-radius: 10px;
+   font-weight: 400;
+   text-decoration: none;
+   text-align: center;
+   box-shadow:  2px 3px #678983 ;
+   font-family:  sans-serif;
+   font-size: 0,75em;
+   margin-bottom: 1em;
+
+}
+
+.botonHistoria2:active, .botonJuego2:active {
+transform: translate(3px , 4px);
+box-shadow: none;
+}
+
+.logoPie{
+
+   width: 7em;
+   padding-top: 4.2em;
+   padding-bottom: 3em;
+   padding-left: 2.2em;
+}
+
+
+.pie{
+   width: 100%;
+   background-color: #678983;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.pieIzquierdo{
+   display: flex;
+   width: 300px;
+   height: 60px;
+   margin-right: 10em;
+
+}
+
+h3{
+   height: 50%;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   padding-right: 7px;
+   text-align: center;
+   margin: auto 0px;
+
+}
+
+h4{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   color: 0 0 0;
+   font-weight: 380;
+   padding-left: 5em;
+   margin-right: 30px;
+
+
+}
+
+p{
+   font-family: 'Montserrat', sans-serif;
+   color: black;
+   text-align: center;
+   margin: 10px;
+}
+
